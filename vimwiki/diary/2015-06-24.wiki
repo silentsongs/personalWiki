@@ -1,0 +1,13 @@
+Upfront Code:
+# 所有load upfront相关表和数据结构，都用#if defined(ADS_ENABLE_FORECAST)包起来
+# 哪些upfront ad_tree_node要load的判断，可以整合到DB_View_ad_tree_node的is_valid方法里
+# 对budget_model的设置要跟ad server一致
+# depo里要把upfront相关的数据结构都清掉，否则会有内存泄漏
+# repeat_in_slot那一段upfront的逻辑可以删掉
+# sequence的+15可以改成从最高位开始用
+# pending输出的时候，把sequence用更直白的方式表示，比如ad_id:sequence
+# get_placement_budget的逻辑要跟remainning_daily_impression的计算逻辑保持一致
+
+Portfolio Forecast Redesign:
+# 不能往lu_criteria_type表里插数据，直接预留几个大于127的数
+# 确定跟UI的接口

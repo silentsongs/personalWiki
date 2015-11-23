@@ -1,0 +1,11 @@
+== 光标移动 ==
+* 字符操作
+* 字操作
+	- ESC-B，光标向后移动一个word
+	- ESC-F，光标向前移动一个word
+	- ESC-DEL，删除当前或者后面的word
+	- ESC-CTRL-H，删除前面的word，或者word的光标前面部分
+	- ESC-D，删除后面的word，或者word的光标后面部分
+	- CTRL-W，删除前面的word，或者word的光标前面部分
+	- CTRL-Y，回复之前删除的部分
+* 行操作

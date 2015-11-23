@@ -1,0 +1,23 @@
+今天要做的事情：
+* [X] 跟lijuan过portfolio forecast
+* [X] 跟UI过portfolio redesign接口，以及OD的design
+* [X] 讨论UPC的删除
+* [X] zhengwen做的事情的review
+* [X] 管理上的事情
+
+#1和#3在上午差不多就搞定了，临下班才给eng-leads发了邮件，颇为忐忑，不知如何措辞才好；
+#2过的还算顺利，还有几项留待补充：
+	# 确定portfolio OD有没有comepting ads；有的话接口要加参数
+	# portoflio的数据要进delta repo
+	# 考虑一下计算的时候要从repo/delta repo里取
+	# 128以上是负数，想想有没有问题
+	# 用逗号分隔dimension_id，parse的时候会有问题
+#4给zhengwen安排了下一步的工作，把debug tool部署在stg上；
+#5发了retro的meeting邀请，计划整理一下risk list，看看怎么review比较好。
+
+Reminder:
+* [ ] 想一想跑new portfolio OD的时候，老的portfolio怎么处理。
+* [X] 跟PM确认portfolio OD有没有competing ads.
+* [ ] 看一下为什么as01没有plan
+
+

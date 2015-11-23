@@ -1,0 +1,12 @@
+[[Today's]] must do:
+* [X] Daily Meeting. 收集大家想听的topic.
+* [X] Draft sharing topics wiki (业务逻辑相关).
+* [X] 研究清楚CBP template相关问题，给PM发邮件讨论。
+* [X] 准备AF-UP的retro, book meeting.
+* [ ] 看performance test的log, 把初始结果记录下来，作初步分析。
+
+Today's optional:
+* [X] 刷leetcode
+* [ ] Reading. 《程序员的修炼之道》or whatever.
+* [ ] 把vimwiki放到github上.
+* [ ] 把vimwiki部署到vps上.

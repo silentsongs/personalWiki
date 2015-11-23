@@ -1,0 +1,11 @@
+Today's plan:
+# [X] 完成6.2.2要上线的ticket, faked creative要跳过asset store检查
+# [X]  写portfolio forecast OD的design wiki初稿
+# [X] 把check OD的脚本改了，提交并把线上的脚本替换掉
+# [ ] 看一下为什么UI每天都show_od timeout
+# [ ] 有时间看一下zhengwen做的东西如何了
+
+
+#1花了一小时，#2花了至少4小时, #3大概花了一小时。效率有待提高。
+#4看了一下不知道为啥，留待Wangmin继续调查吧。
+

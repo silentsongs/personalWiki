@@ -1,0 +1,2 @@
+CPX design review:
+# summary/daily/trait表考虑把normal的和rbb的整合到一起，加一张final表和final_history表

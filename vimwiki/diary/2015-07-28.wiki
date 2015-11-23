@@ -1,0 +1,12 @@
+Todo:
+
+* [X] weekly meeting
+* [ ] ruonan提的displacing数值浮动的问题
+* [X] yanyan提的RBP没有-1,-1,-1问题
+* [X] 更新aggregator的design wiki
+* [X] 跟zhengwen过scheduler
+* [ ] 更新trello
+* [ ] portfolio新表dump放到forecast那边
+
+Remember:
+注意版本兼容

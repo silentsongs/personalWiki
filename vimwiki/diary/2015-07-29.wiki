@@ -1,0 +1,6 @@
+Remember:
+
+* [ ] Check Memory leak
+* [ ] Check upfront ration case
+* [ ] Read docker file
+* [ ] Forecast Training

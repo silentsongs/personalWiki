@@ -1,0 +1,11 @@
+Things to do today:
+* [X] Portfolio capanion
+* [X] Portfolio bugs
+* [X] Upfront code improvement
+* [ ] Design wiki 更新
+* [X] Book release items meeting
+* [ ] curl wiki
+* [X] 回yuqian的jira comment
+* [ ] upfront OD的associate fc delivered impression的limitation，记到wiki上
+* [X] competing ads没有breakdown by RBP
+* [ ] portfolio OD的limitation, 新term不会load进repo。计划以后改成半小时load一次repo

@@ -1,0 +1,6 @@
+portfolio redesign metrics calculation part code:
+* [X] pending输出格式
+* [X] 确认update_metrics里是否需要companion的逻辑
+* [X] 用数组实现三维type/value
+* [X] breakdown by RBP的情况，还是要考虑net_avails计算
+* [X] 代码格式

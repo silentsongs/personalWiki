@@ -1,0 +1,10 @@
+Upfront code refactor:
+* [X] 把upfront_ad_tree_node_ids的检查放到is_valid函数里
+* [X] depo里要把upfront new出来的数据结构delete掉
+* [ ] ~~确保get_placement_budget跟remainning_daily_impression里budget的使用保持一致~~ 
+* [X] pending输出用更易读的方式显示sequence（比如冒号）
+* [X] budget_/targeted_budget_初始化跟 adserver部分保持一致
+* [X] sequence +15改成用高位
+
+Followup:
+Tianyue will fix #3

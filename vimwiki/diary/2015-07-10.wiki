@@ -1,0 +1,8 @@
+Things to do:
+* [X] 改进publish_od
+* [X] portfolio forecast coding
+* [ ] 更新portfolio OD redesign
+* [ ] 重办身份证
+* [X] 打电话重约试衣服时间
+* [X] custom_portfolio加进tracer
+* [X] 检查所有有portfolio_map的地方

@@ -1,0 +1,6 @@
+Reminder:
+* [X] 确认分sharding数据的上线
+* [ ] 给PM design comment，不能做state/city的validation
+
+对于#1，几个team不需要同时上线。UI和RE先上就行。
+对于#2，先等hongwe的回复吧

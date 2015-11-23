@@ -1,0 +1,18 @@
+今天打算做的事情：
+* [X] 再过一遍portfolio forecast redesign跟UI的接口，发会议邀请。
+* [ ] ~~跟lijuan过一下现有的portfolio design，确定一下数据结构。~~
+* [X] 决定如何处理config template
+* [ ] 想一想管理的上的事情
+* [X] upfront算reserved_budget考虑placement的状态
+
+#1到下午3点才算差不多弄完，大概花了3个小时；
+#2改到明天上午，因为lijuan还没有看相关东西；
+#3的结论是，可以考虑使用python的pystache，怎么做还要仔细想一想有没有聪明一点的法子；
+#5基本上改完了，没有提交，编译了debug版本交给QA去测;
+#4慢慢想吧~~
+
+需要确认的问题
+* [ ] completed UPC的forecast结果是否也保留一个月
+* [ ] 对UPC进行cancel/delete和complete操作，对AF是否有影响: _delete有影响，如果是物理删除，forecast OD会有问题，有待跟yanliang继续讨论_
+
+

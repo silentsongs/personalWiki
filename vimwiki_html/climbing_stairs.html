@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>Vimwiki</title>
+<title>climbing_stairs</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -34,95 +34,57 @@
 </nav>
 <div class="container content-body">
    
-<h1 id="toc_1">Vimwiki</h1>
-<h2 id="toc_1.1">基本格式</h2>
-<h3 id="toc_1.1.1">控制段落</h3>
-<ul>
-<li>
-= 一级标题 =
+<h2 id="toc_0.1">Climbing Stairs</h2>
 
-<li>
-== 二级标题 ==
-
-<li>
-当标题前面有空白时，标题文本居中对齐。
-
-</ul>
-
-<h3 id="toc_1.1.2">控制文本字型</h3>
 <p>
-以下使用，都要求左右有留白。
+ <strong>问题描述</strong> ：
 </p>
 <ul>
 <li>
-两个*之间的内容，粗体文本
-
-<li>
-两个_之间的内容，斜体文本
-
-<li>
-两对~~之间的内容，添加删除线
-
-<li>
-两个`之间的内容，代码（无语法）文本
-
-<li>
-两个^之间的内容，上标
-
-<li>
-两对,,之间的内容，下标
+一个有n级台阶的楼梯，每次只能上一个或者两个台阶，问有多少种方式能够走上楼梯。
 
 </ul>
 
-<h2 id="toc_1.2">Checkbox设置</h2>
 <p>
-使用* [ ] 便是一个未选中的checkbox，* [X] 是选中的checkbox。
-输入C-Space可以开/关鼠标所在项，所有子项会受到父项影响：
+ <strong>关键点</strong> ：
 </p>
 <ul>
 <li>
-<em>[ ]</em> -- 0%
+第一反应是用递归，但是递归的方式会有大量的重复计算
 
 <li>
-<em>[.]</em> -- 1-33%
+所以用递归的思想写循环。
 
 <li>
-<em>[o]</em> -- 34-66%
+用两个变量分别保存到达前一级台阶和前两级台阶一共有多少种方式，两者相加就是到达当前台阶可能的方式。
 
 <li>
-<em>[O]</em> -- 67-99%
-
-<li>
-<em>[X]</em> -- 100%
+初始化变量分别为：到达第一级台阶有1种方式，到达第二级台阶有2种方式。
 
 </ul>
 
-<h2 id="toc_1.3">用Calendar写日志</h2>
-<p>
-装上Calendar插件之后，输入:Calendar就会弹出日历界面，直接回车进入当天日志的编辑页面。
-</p>
+<pre>
 
-<p>
-一些基本命令：
-</p>
-<ul>
-<li>
-\wi 跳转到diary.wiki页面下.
+class Solution {
+public:
+    int climbStairs(int n) {
+        if (n &lt;= 0) return 0;
+        if (n == 1) return 1;
+        if (n == 2) return 2;
+        int one_step_before = 2;
+        int two_step_before = 1;
+        int all_steps = 0;
+        for (int i = 3; i &lt;= n; i++)
+        {   
+            all_steps = one_step_before + two_step_before;
+            two_step_before = one_step_before;
+            one_step_before = all_steps;
+        }   
+        return all_steps;
+    }
+};
 
-<li>
-\w\i 根据目前的日记情况,自动重新生成diary.wiki文件.
-
-</ul>
-
-<h2 id="toc_1.4">转成HTML页面</h2>
-<ul>
-<li>
-转换当前页面: :Vimwiki2HTML 
-
-<li>
-转换所有页面: :VimwikiAll2HTML
-
-</ul>
+</pre>
 
 </div>
 </body>

@@ -1,0 +1,4 @@
+Today's tasks:
+* [ ] 性能分析
+* [ ] 准备retro，重发邀请。
+* [ ] CBP template approach ready

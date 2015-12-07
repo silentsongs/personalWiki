@@ -1,0 +1,56 @@
+== Intersection of Two Linked Lists ==
+
+ *问题描述* ：
+找出两个单向链表开始重合的节点。
+{{{
+For example, the following two linked lists:
+
+A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+begin to intersect at node c1.
+
+}}}
+
+ *要求* ：
+* 如果没有重合的节点，返回NULL。
+* 当方法返回时，两个单向链表的内容没有被改变。
+* 可以假设不存在循环链表。
+* 要求O(n)的时间复杂度，O(1)的内存占用。
+
+ *思路* ：
+* 链表A的长度 + 链表B的长度 - 各自非重合的部分 = 2 * 重合部分的长度
+
+ *注意* ：
+* 采用这种方式的时候，必须强调只适用于不存在循环的场景下。
+
+{{{
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        if (headA == NULL || headB == NULL) return NULL;
+        ListNode* a = headA;
+        ListNode* b = headB;
+        while(a != b)
+        {   
+            a = a->next;
+            b = b->next;
+
+            if (a == b) return a;
+            if (a == NULL) a = headB;
+            if (b == NULL) b = headA;
+        }   
+        return a;
+    }
+};
+}}}

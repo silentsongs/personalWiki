@@ -8,5 +8,5 @@
 Today's optional:
 * [X] 刷leetcode
 * [ ] Reading. 《程序员的修炼之道》or whatever.
-* [ ] 把vimwiki放到github上.
-* [ ] 把vimwiki部署到vps上.
+* [X] 把vimwiki放到github上.
+* [X] 把vimwiki部署到vps上.

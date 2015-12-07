@@ -1,0 +1,53 @@
+== String to Integer ==
+
+实现string到int的转换，也就是实现c++里的atoi方法。规则是从输入的string里，截取第一个空格前有效的部分，转换为数字。
+
+这一题要注意的点是：
+# 要考虑清楚有哪些可能的输入。
+	- 空字符串。
+	- 第一个空格前的字串里有非数字的字符。
+	- 第一个字符可能是正负号，也可能没有。
+	- 有效子串可能非常长，超过int能表达的范围。
+# *注意溢出的case!!!*
+# 关于API:
+	- 用到了string的find_first_not_of
+	- string类型可以直接用[]下标取字符。
+
+*case设计* ：
+* ""
+* "   "
+* "invalid case"
+* "12e4 test"
+* "12345 test"
+* "+12345"
+* "-12345"
+* "2147483647"
+* "-2147483648"
+* "21474836482 overflow"
+
+
+{{{
+
+class Solution {
+public:
+    int myAtoi(string str) {
+        int pos = str.find_first_not_of(" ");
+        int indicator = 1;
+        long result = 0;
+        if (str[pos] == '+' || str[pos] == '-')
+        {
+            if (str[pos] == '-') indicator = -1;
+            pos++;
+        }
+        while(str[pos] <= '9' && str[pos] >= '0')
+        {
+            result = result * 10 + (str[pos] - '0');
+            if (result * indicator >= INT_MAX) return INT_MAX;
+            if (result * indicator <= INT_MIN) return INT_MIN;
+            pos++;
+        }
+        return result * indicator;
+    }
+};
+
+}}}

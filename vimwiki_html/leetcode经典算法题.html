@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="Stylesheet" type="text/css" href="static/css/wiki.css">
+<link rel="Stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/wiki.js"></script>
+<title>leetcode经典算法题</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+		<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+			<span class="sr-only"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html">BlueBird's Wiki</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="diary/diary.html">日记</a></li>
+				<li><a href="各类清单.html">清单</a></li>
+				<li><a href="文章.html">文章</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container content-body">
+   
+<h2 id="toc_0.1">Leetcode经典算法题</h2>
+
+<h3 id="toc_0.1.1">Details</h3>
+<ul>
+<li>
+<a href="atoi.html">String to Integer</a>
+
+<li>
+<a href="palindrome_number.html">Palindrome Number</a>
+
+<li>
+<a href="remove_nth_from_end_of_list.html">Remove Nth Node From End of List</a>
+
+<li>
+<a href="plus_one.html">Plus One</a>: 注意vector的用法，用到了insert.
+
+<li>
+<a href="add_binary.html">Add Binary</a>
+
+<li>
+<a href="climbing_stairs.html">Climbing Stairs</a> : 简单动规
+
+<li>
+<a href="minimun_depth_of_binary_tree.html">Minimum Depth of Binary Tree</a>: 第一遍没思路。参考层序遍历。另外考虑一下更好写法。
+
+<li>
+<a href="intersection_of_two_linked_lists.html">Intersection of Two Linked Lists</a>: 找到两个链表开始重合的点。
+
+<li>
+<a href="excel_sheet_column_title.html">Excel Sheet Column Title</a>: 还有个问题没想清楚。
+
+<li>
+<a href="reverse_linked_list.html">Reverse Linked List</a>: 反转单向链表
+
+</ul>
+
+<h3 id="toc_0.1.2">References for Others</h3>
+
+<p>
+ <strong>字符串处理</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a> ：没有什么技巧，需要反复多写几遍！
+
+<li>
+<a href="https://leetcode.com/problems/implement-strstr/">Implement strStr</a>: 反复练习！*P1* 
+
+<li>
+<a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</a> : 可以使用string的find_last_of方法。另外，实现其实没有考虑最后一个单词不合法的情况，因为题目说明所有字符只包含大小写字母和空格。
+
+<li>
+<a href="https://leetcode.com/problems/valid-palindrome/">Valid Palindrome String</a>: 判断一个string是否回文。从两头往中间靠。
+
+<li>
+<a href="https://leetcode.com/problems/compare-version-numbers/">Compare Version Numbers</a>: 现在的实现有点累赘，应该再用简洁一点的方式实现。
+
+<li>
+<a href="https://leetcode.com/problems/isomorphic-strings/">Isomorphic Strings</a>: 判断两个string，是否用某种字母匹配方式，把string1中的字母替换掉就能得到string2.
+
+</ul>
+
+<p>
+ <strong>妙用数据结构</strong> :
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a> : 括号匹配，用栈来解决问题，一切都很简单。
+
+<li>
+<a href="https://leetcode.com/problems/min-stack/">Min Stack</a>: 用两个栈来实现能够直接获得最小值的栈。
+
+</ul>
+
+<p>
+ <strong>树</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/same-tree/">Same Tree</a>: 判断两棵树是否相等。递归方法非常简单。
+
+<li>
+<a href="https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a> : 判断一棵树是否对称。对于左右子树，val要相等，然后左子树的右子树的val等于右子树的左子树，左子树的左子树val等于右子树的右子树。
+
+<li>
+<a href="https://leetcode.com/problems/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal</a> : 二叉树的层序遍历。用队列来实现比较方便。
+
+<li>
+<a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree</a>: 返回树的高度，用递归。
+
+<li>
+<a href="https://leetcode.com/problems/binary-tree-level-order-traversal-ii/">Binary Tree Bottom Up Level Order Traversal</a>: 还是二叉树的层序遍历，只不过自底向上。再写两遍。
+
+<li>
+<a href="https://leetcode.com/problems/balanced-binary-tree/">Balanced Binary Tree</a>: 判断是否平衡二叉树。现有解法先用递归判断高度，再用递归看是否balanced，感觉效率不高。应该再研究下有没有更好解法。
+
+<li>
+<a href="https://leetcode.com/problems/path-sum/">Path Sum</a>: 给定二叉树和一个整数，判断有没有从根节点到叶子节点存在一条路径，上面的节点val值加和等于这个整数。递归方法比较简单，没有试过非递归方法。
+
+</ul>
+
+<p>
+ <strong>链表</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted List</a> ：没有什么技巧，需要反复多写几遍！
+
+<li>
+<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">Remove Duplicates From Sorted List</a> : 多写几遍！
+
+<li>
+<a href="https://leetcode.com/problems/remove-linked-list-elements/">Remove Linked List Elements</a>: 把单向链表中val等于n的元素都移除。要注意的case是，在头节点处移除，以及连续移除多个节点. 需要多看多写几遍。
+
+</ul>
+
+<p>
+ <strong>数组</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Remove Duplicates From Sorted Array</a>: 没有什么技巧，需要反复多写几遍！
+
+<li>
+<a href="https://leetcode.com/problems/remove-element/">Remove Element</a> : 没有什么技巧，需要反复多写几遍！
+
+<li>
+<a href="https://leetcode.com/problems/merge-sorted-array/">Merge Sorted Array</a> : 这题重点是要倒着来，从后往前遍历。应该再写几遍。
+
+<li>
+<a href="https://leetcode.com/problems/pascals-triangle/">Pascal's Triangle</a>: n层塔。给定整数n, 返回构造好的n层塔。
+
+<li>
+<a href="https://leetcode.com/problems/pascals-triangle-ii/">Pascal's Triangle II</a>: 还是n层塔，给定整数k，给出第k行是什么，要求O(k)的空间。
+
+<li>
+<a href="https://leetcode.com/problems/majority-element/">Majority Element</a>: 考虑数组里有一个元素出现多过n/2次的特性。
+
+<li>
+<a href="https://leetcode.com/problems/rotate-array/">Rotate Array</a>: 应该考虑更好的解法。再写两遍
+
+</ul>
+
+<p>
+ <strong>递归</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/count-and-say/">Count and Say</a>: 用递归。另外要注意在退出循环后，还有最后一次处理。
+
+</ul>
+
+<p>
+ <strong>位操作</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/reverse-bits/">Reverse Bits</a>: 应该想想更好的写法再写一遍。
+
+<li>
+<a href="https://leetcode.com/problems/number-of-1-bits/">Number of 1 Bits</a>: 32位整型数的二进制表示中，1出现的次数。想想为什么n &amp;= (n-1)可以解决问题。为什么每做一种这个操作，1的数量就会减1.
+
+</ul>
+
+<p>
+ <strong>动态规划</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/house-robber/">House Robber</a>: 要重新完整地写两遍。
+
+</ul>
+
+<p>
+ <strong>基于某种算法理论</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/happy-number/">Happy Number</a>: 一个数字所有数位的平方加和，重复做同样的操作，如果重复若干次后能得到1的结果，那么就是happy number。参考<a href="https://en.wikipedia.org/wiki/Cycle_detection">Floyd cycle detection algorithm</a>
+
+<li>
+<a href="https://leetcode.com/problems/count-primes/">Count Primes</a>: 计算小于n的整数里有多少质数。参考<a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">Sieve of Eratosthenes</a>, 没太深印象，需要多复习几遍。
+
+</ul>
+
+<p>
+ <strong>其他</strong> ：
+</p>
+<ul>
+<li>
+<a href="https://leetcode.com/problems/roman-to-integer/">Roman to Integer</a>: 核心思想是，如果前一位比后一位大，那就用加法；如果前一位比后一位小，那就用减法。
+
+<li>
+<a href="https://leetcode.com/problems/excel-sheet-column-number/">Excel Sheet Column Number</a>: 把column title转成数字就简单多了。
+
+<li>
+<a href="https://leetcode.com/problems/factorial-trailing-zeroes/">Factorial Trailing Zeroes</a>: 找n的阶乘结果，最后有几位0. 只需要考虑n的阶乘里有多少个10（有多少个5就够了，因为2一定比5多）。
+
+</ul>
+
+</div>
+</body>
+</html>

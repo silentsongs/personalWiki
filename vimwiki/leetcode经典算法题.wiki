@@ -1,0 +1,69 @@
+== Leetcode经典算法题 ==
+
+=== Details ===
+* [[atoi| String to Integer]]
+* [[palindrome_number|Palindrome Number]]
+* [[remove_nth_from_end_of_list| Remove Nth Node From End of List]]
+* [[plus_one| Plus One]]: 注意vector的用法，用到了insert.
+* [[add_binary| Add Binary]]
+* [[climbing_stairs| Climbing Stairs]] : 简单动规
+* [[minimun_depth_of_binary_tree| Minimum Depth of Binary Tree]]: 第一遍没思路。参考层序遍历。另外考虑一下更好写法。
+* [[intersection_of_two_linked_lists| Intersection of Two Linked Lists]]: 找到两个链表开始重合的点。
+* [[excel_sheet_column_title| Excel Sheet Column Title]]: 还有个问题没想清楚。
+* [[reverse_linked_list| Reverse Linked List]]: 反转单向链表
+
+=== References for Others ===
+
+ *字符串处理* ：
+* [[https://leetcode.com/problems/longest-common-prefix/|Longest Common Prefix]] ：没有什么技巧，需要反复多写几遍！
+* [[https://leetcode.com/problems/implement-strstr/| Implement strStr]]: 反复练习！*P1* 
+* [[https://leetcode.com/problems/length-of-last-word/| Length of Last Word]] : 可以使用string的find_last_of方法。另外，实现其实没有考虑最后一个单词不合法的情况，因为题目说明所有字符只包含大小写字母和空格。
+* [[https://leetcode.com/problems/valid-palindrome/| Valid Palindrome String]]: 判断一个string是否回文。从两头往中间靠。
+* [[https://leetcode.com/problems/compare-version-numbers/| Compare Version Numbers]]: 现在的实现有点累赘，应该再用简洁一点的方式实现。
+* [[https://leetcode.com/problems/isomorphic-strings/| Isomorphic Strings]]: 判断两个string，是否用某种字母匹配方式，把string1中的字母替换掉就能得到string2.
+
+ *妙用数据结构* :
+* [[https://leetcode.com/problems/valid-parentheses/| Valid Parentheses]] : 括号匹配，用栈来解决问题，一切都很简单。
+* [[https://leetcode.com/problems/min-stack/| Min Stack]]: 用两个栈来实现能够直接获得最小值的栈。
+
+ *树* ：
+* [[https://leetcode.com/problems/same-tree/| Same Tree]]: 判断两棵树是否相等。递归方法非常简单。
+* [[https://leetcode.com/problems/symmetric-tree/| Symmetric Tree]] : 判断一棵树是否对称。对于左右子树，val要相等，然后左子树的右子树的val等于右子树的左子树，左子树的左子树val等于右子树的右子树。
+* [[https://leetcode.com/problems/binary-tree-level-order-traversal/| Binary Tree Level Order Traversal]] : 二叉树的层序遍历。用队列来实现比较方便。
+* [[https://leetcode.com/problems/maximum-depth-of-binary-tree/| Maximum Depth of Binary Tree]]: 返回树的高度，用递归。
+* [[https://leetcode.com/problems/binary-tree-level-order-traversal-ii/| Binary Tree Bottom Up Level Order Traversal]]: 还是二叉树的层序遍历，只不过自底向上。再写两遍。
+* [[https://leetcode.com/problems/balanced-binary-tree/| Balanced Binary Tree]]: 判断是否平衡二叉树。现有解法先用递归判断高度，再用递归看是否balanced，感觉效率不高。应该再研究下有没有更好解法。
+* [[https://leetcode.com/problems/path-sum/| Path Sum]]: 给定二叉树和一个整数，判断有没有从根节点到叶子节点存在一条路径，上面的节点val值加和等于这个整数。递归方法比较简单，没有试过非递归方法。
+
+ *链表* ：
+* [[https://leetcode.com/problems/merge-two-sorted-lists/| Merge Two Sorted List]] ：没有什么技巧，需要反复多写几遍！
+* [[https://leetcode.com/problems/remove-duplicates-from-sorted-list/| Remove Duplicates From Sorted List]] : 多写几遍！
+* [[https://leetcode.com/problems/remove-linked-list-elements/| Remove Linked List Elements]]: 把单向链表中val等于n的元素都移除。要注意的case是，在头节点处移除，以及连续移除多个节点. 需要多看多写几遍。
+
+ *数组* ：
+* [[https://leetcode.com/problems/remove-duplicates-from-sorted-array/| Remove Duplicates From Sorted Array]]: 没有什么技巧，需要反复多写几遍！
+* [[https://leetcode.com/problems/remove-element/| Remove Element]] : 没有什么技巧，需要反复多写几遍！
+* [[https://leetcode.com/problems/merge-sorted-array/| Merge Sorted Array]] : 这题重点是要倒着来，从后往前遍历。应该再写几遍。
+* [[https://leetcode.com/problems/pascals-triangle/| Pascal's Triangle]]: n层塔。给定整数n, 返回构造好的n层塔。
+* [[https://leetcode.com/problems/pascals-triangle-ii/| Pascal's Triangle II]]: 还是n层塔，给定整数k，给出第k行是什么，要求O(k)的空间。
+* [[https://leetcode.com/problems/majority-element/| Majority Element]]: 考虑数组里有一个元素出现多过n/2次的特性。
+* [[https://leetcode.com/problems/rotate-array/| Rotate Array]]: 应该考虑更好的解法。再写两遍
+
+ *递归* ：
+* [[https://leetcode.com/problems/count-and-say/| Count and Say]]: 用递归。另外要注意在退出循环后，还有最后一次处理。
+
+ *位操作* ：
+* [[https://leetcode.com/problems/reverse-bits/| Reverse Bits]]: 应该想想更好的写法再写一遍。
+* [[https://leetcode.com/problems/number-of-1-bits/| Number of 1 Bits]]: 32位整型数的二进制表示中，1出现的次数。想想为什么n &= (n-1)可以解决问题。为什么每做一种这个操作，1的数量就会减1.
+
+ *动态规划* ：
+* [[https://leetcode.com/problems/house-robber/| House Robber]]: 要重新完整地写两遍。
+
+ *基于某种算法理论* ：
+* [[https://leetcode.com/problems/happy-number/| Happy Number]]: 一个数字所有数位的平方加和，重复做同样的操作，如果重复若干次后能得到1的结果，那么就是happy number。参考[[https://en.wikipedia.org/wiki/Cycle_detection| Floyd cycle detection algorithm]]
+* [[https://leetcode.com/problems/count-primes/| Count Primes]]: 计算小于n的整数里有多少质数。参考[[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes| Sieve of Eratosthenes]], 没太深印象，需要多复习几遍。
+
+ *其他* ：
+* [[https://leetcode.com/problems/roman-to-integer/| Roman to Integer]]: 核心思想是，如果前一位比后一位大，那就用加法；如果前一位比后一位小，那就用减法。
+* [[https://leetcode.com/problems/excel-sheet-column-number/| Excel Sheet Column Number]]: 把column title转成数字就简单多了。
+* [[https://leetcode.com/problems/factorial-trailing-zeroes/| Factorial Trailing Zeroes]]: 找n的阶乘结果，最后有几位0. 只需要考虑n的阶乘里有多少个10（有多少个5就够了，因为2一定比5多）。

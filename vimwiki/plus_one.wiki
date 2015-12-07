@@ -1,0 +1,43 @@
+== Plus One ==
+
+ *题目要求*：
+* 给定数字，用数组表示，每一个元素代表这个数字的一位，数组的最低位表示数字的最高位。
+* 要求对这个数字进行加1操作，返回同样用数组表示的加和结果。
+
+ *考虑的情况* :
+* 加1不需要进位。
+* 加1需要进位，但是最高位不用进位。
+* 最高位也需要进位，参考999+1
+
+
+{{{
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        int size = digits.size();
+        for (int i = size - 1; i >= 0; i--)
+        {   
+            if (digits[i] < 9)
+            {   
+                digits[i] += 1;
+                return digits;
+            }   
+            else
+            {   
+                digits[i] = 0;
+                if (i == 0)
+                {   
+                    vector<int>::iterator it; 
+                    it = digits.begin();
+                    it = digits.insert (it, 1); 
+                    return digits;
+                }   
+                continue;
+            }   
+        }   
+        return digits;
+    }
+};
+
+}}}

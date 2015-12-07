@@ -1,0 +1,11 @@
+Today's must do:
+* [ ] 性能测试结果分析，给出初步结果
+* [X] Sales Proposal discussion.
+* [X] Finish CBP templates的approach doc.
+* [ ] 把portfolio forecast里该做的事情，建出INK，给出plan.
+* [X] 跟进MARGIN_BASED_DELIVERY_CONFIG
+
+Today's optional:
+* [ ] 配置webhooks, 实现git push之后自动更新到vps
+* [ ] 刷leetcode
+* [ ] Reading.

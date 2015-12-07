@@ -1,0 +1,47 @@
+== Remove Nth Node From End of List ==
+
+ *Reference* : https://leetcode.com/problems/longest-common-prefix/
+
+ *题目要求* : 
+* 从链表的结尾开始数，删除第n个节点，返回头节点
+* 只遍历一次
+
+ *注意的点* ：
+* n可能大于链表长度
+
+ *解法分析* ：
+* 假设链表长度为k，k>=n，实际上只需要从头结点开始，移动k-n-1次，此时的next就是需要删除的节点。所以关键点是如何找到k-n-1的的位置，因为只能遍历一次。
+* 只需要先移动n-1次，然后同时从原始头节点同时开始移动，直到前者到结尾。 
+
+{{{
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode** l1 = &head;
+        ListNode* l2 = head;
+        for (int i = 1; i < n; i++)
+        {   
+            if (l2 == NULL) return head;
+            l2 = l2->next;
+        }   
+        while(l2->next != NULL)
+        {   
+            l1 = &((*l1)->next);
+            l2 = l2->next;
+        }   
+        *l1 = (*l1)->next;
+        return head;
+
+    }
+};
+
+}}}

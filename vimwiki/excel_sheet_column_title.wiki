@@ -1,0 +1,39 @@
+== Excel Sheet Column Title ==
+
+ *题目要求* ：
+* 给定一个正整数，给出它代表excel里的column title是什么。excel column title的规则是：
+{{{
+    1 -> A
+    2 -> B
+    3 -> C
+    ...
+    26 -> Z
+    27 -> AA
+    28 -> AB 
+}}}
+
+ *关键点*：
+* 本质上就是26进制数的转换。
+* 区别是从1开始。
+* 还是没有太想明白每次除以26之后要减1是为什么。
+
+{{{
+class Solution {
+public:
+    string convertToTitle(int n) {
+        string output = ""; 
+        if (n == 0) return output;
+        n--;
+        while(n/26 > 0)
+        {   
+            int x = n % 26; 
+            output = string(1, 'A' + x) + output;
+            n = n/26 - 1;
+        }   
+        if (n >= 0) output = string(1, 'A' + n) + output;
+        return output;
+    }
+};
+}}}
+
+

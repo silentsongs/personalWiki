@@ -1,0 +1,33 @@
+== Climbing Stairs ==
+
+ *问题描述* ：
+* 一个有n级台阶的楼梯，每次只能上一个或者两个台阶，问有多少种方式能够走上楼梯。
+
+ *关键点* ：
+* 第一反应是用递归，但是递归的方式会有大量的重复计算
+* 所以用递归的思想写循环。
+* 用两个变量分别保存到达前一级台阶和前两级台阶一共有多少种方式，两者相加就是到达当前台阶可能的方式。
+* 初始化变量分别为：到达第一级台阶有1种方式，到达第二级台阶有2种方式。
+
+{{{
+
+class Solution {
+public:
+    int climbStairs(int n) {
+        if (n <= 0) return 0;
+        if (n == 1) return 1;
+        if (n == 2) return 2;
+        int one_step_before = 2;
+        int two_step_before = 1;
+        int all_steps = 0;
+        for (int i = 3; i <= n; i++)
+        {   
+            all_steps = one_step_before + two_step_before;
+            two_step_before = one_step_before;
+            one_step_before = all_steps;
+        }   
+        return all_steps;
+    }
+};
+
+}}}

@@ -1,4 +1,4 @@
-== Leetcode经典算法题 ==
+== Leetcode算法题 ==
 
 === Details ===
 * [[atoi| String to Integer]]

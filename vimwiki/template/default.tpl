@@ -28,6 +28,7 @@
 				<li><a href="%root_path%diary/diary.html">日记</a></li>
 				<li><a href="%root_path%各类清单.html">清单</a></li>
 				<li><a href="%root_path%文章.html">文章</a></li>
+				<li><a href="%root_path%收藏.html">收藏</a></li>
 			</ul>
 		</div>
 	</div>

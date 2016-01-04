@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="Stylesheet" type="text/css" href="static/css/wiki.css">
+<link rel="Stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/wiki.js"></script>
+<title>contain_duplicate_3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+		<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+			<span class="sr-only"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html">BlueBird's Wiki</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="diary/diary.html">日记</a></li>
+				<li><a href="各类清单.html">清单</a></li>
+				<li><a href="文章.html">文章</a></li>
+				<li><a href="收藏.html">收藏</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container content-body">
+   
+<h2 id="toc_0.1">Contain Dumplicate III</h2>
+
+<p>
+ <strong>问题描述</strong> ：
+</p>
+<ul>
+<li>
+整数数组nums.
+
+<li>
+是否存在i和j, 满足nums[i]和nums[j]之间的差距不大于t
+
+<li>
+并且i和j之间的差距不大于k
+
+</ul>
+
+<p>
+ <strong>说明</strong> ：
+</p>
+<ul>
+<li>
+用c++里的set数据结构能比较好的解决问题。
+
+<li>
+注意lower_bound的用法，是否包含给定参数。
+
+</ul>
+
+<pre>
+class Solution {
+public:
+    bool containsNearbyAlmostDuplicate(vector&lt;int&gt;&amp; nums, int k, int t) {
+        if (k &lt;= 0) return false;
+        set&lt;int&gt; elements;
+
+        for (int i = 0; i &lt; nums.size(); i++)
+        {   
+            if (i &gt; k)
+            {   
+                elements.erase(nums[i-k-1]);
+            }   
+            set&lt;int&gt;::iterator it = elements.lower_bound(nums[i] - t);
+            if (it != elements.end() &amp;&amp; *it - t &lt;= nums[i]) 
+                return true;
+            else 
+                elements.insert(nums[i]);
+        }   
+        return false;
+    }
+};
+</pre>
+
+</div>
+</body>
+</html>

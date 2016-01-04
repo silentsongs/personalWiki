@@ -1,0 +1,34 @@
+== Contain Dumplicate III ==
+
+ *问题描述* ：
+* 整数数组nums.
+* 是否存在i和j, 满足nums[i]和nums[j]之间的差距不大于t
+* 并且i和j之间的差距不大于k
+
+ *说明* ：
+* 用c++里的set数据结构能比较好的解决问题。
+* 注意lower_bound的用法，是否包含给定参数。
+
+{{{
+class Solution {
+public:
+    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
+        if (k <= 0) return false;
+        set<int> elements;
+
+        for (int i = 0; i < nums.size(); i++)
+        {   
+            if (i > k)
+            {   
+                elements.erase(nums[i-k-1]);
+            }   
+            set<int>::iterator it = elements.lower_bound(nums[i] - t);
+            if (it != elements.end() && *it - t <= nums[i]) 
+                return true;
+            else 
+                elements.insert(nums[i]);
+        }   
+        return false;
+    }
+};
+}}}

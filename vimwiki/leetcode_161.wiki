@@ -1,0 +1,7 @@
+=== One Edit Distance ===
+
+{{{
+Given two strings S and T, determine if they are both one edit distance apart.
+}}}
+
+Reference: [[https://leetcode.com/problems/one-edit-distance/| One Edit Distance]]

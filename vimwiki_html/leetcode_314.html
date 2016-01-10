@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>leetcode</title>
+<title>leetcode_314</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -35,16 +35,46 @@
 </nav>
 <div class="container content-body">
    
-<h3 id="toc_0.0.1">Leetcode Problems</h3>
+<h3 id="toc_0.0.1">Binary Tree Vertical Order Traversal</h3>
 
-<ul>
-<li>
-<a href="leetcode_google.html">Google</a>
+<pre>
+Given a binary tree, return the vertical order traversal of its nodes' values. (ie, from top to bottom, column by column).
 
-<li>
-<a href="leetcode_facebook.html">Facebook</a>
+If two nodes are in the same row and column, the order should be from left to right.
 
-</ul>
+Examples:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its vertical order traversal as:
+[
+  [9],
+  [3,15],
+  [20],
+  [7]
+]
+Given binary tree [3,9,20,4,5,2,7],
+    _3_
+   /   \
+  9    20
+ / \   / \
+4   5 2   7
+return its vertical order traversal as:
+[
+  [4],
+  [9],
+  [3,5,2],
+  [20],
+  [7]
+]
+</pre>
+
+<p>
+Reference: <a href="https://leetcode.com/problems/binary-tree-vertical-order-traversal/">Binary Tree Vertical Order Traversal</a>
+</p>
 
 </div>
 </body>

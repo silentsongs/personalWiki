@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>leetcode</title>
+<title>leetcode_286</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -35,16 +35,52 @@
 </nav>
 <div class="container content-body">
    
-<h3 id="toc_0.0.1">Leetcode Problems</h3>
+<h3 id="toc_0.0.1">Walls and Gates</h3>
 
-<ul>
+<p>
+You are given a m x n 2D grid initialized with these three possible values.
+{
+</p>
+<ol>
 <li>
-<a href="leetcode_google.html">Google</a>
+-1 - A wall or an obstacle.
 
 <li>
-<a href="leetcode_facebook.html">Facebook</a>
+0 - A gate.
 
-</ul>
+<li>
+INF - Infinity means an empty room. We use the value 2<sup><small>31</small></sup> - 1 = 2147483647 to represent INF as you may assume that the distance to a gate is less than 2147483647.
+
+</ol>
+
+<p>
+Fill each empty room with the distance to its nearest gate. If it is impossible to reach a gate, it should be filled with INF.
+</p>
+
+<p>
+For example, given the 2D grid:
+</p>
+
+<pre>
+INF  -1  0  INF
+INF INF INF  -1
+INF  -1 INF  -1
+  0  -1 INF INF
+</pre>
+
+<p>
+After running your function, the 2D grid should be:
+</p>
+<pre>
+  3  -1   0   1
+  2   2   1  -1
+  1  -1   2  -1
+  0  -1   3   4
+</pre>
+
+<p>
+Reference: <a href="https://leetcode.com/problems/walls-and-gates/">Walls and Gates</a>
+</p>
 
 </div>
 </body>

@@ -1,0 +1,20 @@
+== Leetcode Problems ==
+
+=== Others ===
+
+ *Twitter:*
+* [[https://leetcode.com/problems/merge-k-sorted-lists/| Merge k Sorted Lists]]: Hard 
+
+ *Snapchat:*
+* [[leetcode_270| Closest Binary Search Tree Value]]: Easy
+
+ *Apple:*
+* [[https://leetcode.com/problems/peeking-iterator/| Peeking Iterator]]: Medium
+
+ *Yahoo:*
+* [[https://leetcode.com/problems/serialize-and-deserialize-binary-tree/| Serialize and Deserialize Binary Tree]]: Medium
+* [[https://leetcode.com/problems/peeking-iterator/| Peeking Iterator]]: Medium
+
+ *Dropbox:*
+* [[https://leetcode.com/problems/word-pattern/| Word Patten]]: Easy
+* [[leetcode_291| Word Pattern II]]

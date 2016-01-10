@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>leetcode</title>
+<title>leetcode_254</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -35,40 +35,48 @@
 </nav>
 <div class="container content-body">
    
-<h3 id="toc_0.0.1">Leetcode Problems</h3>
+<h3 id="toc_0.0.1">Factor Combinations</h3>
 
-<ul>
-<li>
-<a href="leetcode_google.html">Google</a>
+<pre>
+Numbers can be regarded as product of its factors. For example,
 
-<li>
-<a href="leetcode_facebook.html">Facebook</a>
+8 = 2 x 2 x 2;
+  = 2 x 4.
+Write a function that takes an integer n and return all possible combinations of its factors.
 
-<li>
-<a href="leetcode_linkedin.html">LinkedIn</a>
+Note: 
+Each combination's factors must be sorted ascending, for example: The factors of 2 and 6 is [2, 6], not [6, 2].
+You may assume that n is always positive.
+Factors should be greater than 1 and less than n.
+Examples: 
+input: 1
+output: 
+[]
+input: 37
+output: 
+[]
+input: 12
+output:
+[
+  [2, 6],
+  [2, 2, 3],
+  [3, 4]
+]
+input: 32
+output:
+[
+  [2, 16],
+  [2, 2, 8],
+  [2, 2, 2, 4],
+  [2, 2, 2, 2, 2],
+  [2, 4, 4],
+  [4, 8]
+]
+</pre>
 
-<li>
-<a href="leetcode_uber.html">Uber</a>
-
-<li>
-<a href="leetcode_amazon.html">Amazon</a>
-
-<li>
-<a href="leetcode_airbnb.html">Airbnb</a>
-
-<li>
-<a href="leetcode_microsoft.html">Microsoft</a>
-
-<li>
-<a href="leetcode_zenefits.html">Zenefits</a>
-
-<li>
-<a href="leetcode_others.html">Others</a>
-
-<li>
-<a href="leetcode_locks.html">Locked Problems</a>
-
-</ul>
+<p>
+Reference: <a href="https://leetcode.com/problems/factor-combinations/">Factor Combinations</a>
+</p>
 
 </div>
 </body>

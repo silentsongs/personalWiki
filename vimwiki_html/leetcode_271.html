@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>面试准备</title>
+<title>leetcode_271</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -35,21 +35,41 @@
 </nav>
 <div class="container content-body">
    
+<h3 id="toc_0.0.1">Encode and Decode Strings</h3>
+
+<pre>
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+
+Machine 1 (sender) has the function:
+
+string encode(vector&lt;string&gt; strs) {
+  // ... your code
+  return encoded_string;
+}
+Machine 2 (receiver) has the function:
+vector&lt;string&gt; decode(string s) {
+  //... your code
+  return strs;
+}
+So Machine 1 does:
+
+string encoded_string = encode(strs);
+and Machine 2 does:
+
+vector&lt;string&gt; strs2 = decode(encoded_string);
+strs2 in Machine 2 should be the same as strs in Machine 1.
+
+Implement the encode and decode methods.
+
+Note:
+The string may contain any possible characters out of 256 valid ascii characters. Your algorithm should be generalized enough to work on any possible characters.
+Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
+Do not rely on any library method such as eval or serialize methods. You should implement your own encode/decode algorithm.
+</pre>
+
 <p>
-希望能有好结果！
+Reference: <a href="https://leetcode.com/problems/encode-and-decode-strings/">Encode and Decode Strings</a>
 </p>
-
-<ul>
-<li>
-<a href="准备计划.html">准备计划</a>
-
-<li>
-<a href="归档笔记.html">归档笔记</a>
-
-<li>
-<a href="leetcode.html">leetcode</a>
-
-</ul>
 
 </div>
 </body>

@@ -7,7 +7,7 @@
 <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/wiki.js"></script>
-<title>面试准备</title>
+<title>leetcode_272</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
@@ -35,21 +35,31 @@
 </nav>
 <div class="container content-body">
    
+<h3 id="toc_0.0.1">Closest Binary Search Tree Value II</h3>
+
+<pre>
+Given a non-empty binary search tree and a target value, find k values in the BST that are closest to the target.
+
+Note:
+Given target value is a floating point.
+You may assume k is always valid, that is: k ≤ total nodes.
+You are guaranteed to have only one unique set of k values in the BST that are closest to the target.
+Follow up:
+Assume that the BST is balanced, could you solve it in less than O(n) runtime (where n = total nodes)?
+
+Hint:
+
+Consider implement these two helper functions:
+  getPredecessor(N), which returns the next smaller node to N.
+  getSuccessor(N), which returns the next larger node to N.
+Try to assume that each node has a parent pointer, it makes the problem much easier.
+Without parent pointer we just need to keep track of the path from the root to the current node using a stack.
+You would need two stacks to track the path in finding predecessor and successor node separately.
+</pre>
+
 <p>
-希望能有好结果！
+Reference: <a href="https://leetcode.com/problems/closest-binary-search-tree-value-ii/">Closest Binary Search Tree Value II</a>
 </p>
-
-<ul>
-<li>
-<a href="准备计划.html">准备计划</a>
-
-<li>
-<a href="归档笔记.html">归档笔记</a>
-
-<li>
-<a href="leetcode.html">leetcode</a>
-
-</ul>
 
 </div>
 </body>

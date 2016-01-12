@@ -1,4 +1,53 @@
 == Autotools - A Practioner's Guide to GNU Autoconf, Automake, and Libtool ==
 
-=== 第一章 ===
+=== 第一章 总体介绍Autotools ===
+Autotools的两个主要目的：
+# 为你的程序的最终用户提供便利；
+# 让你的程序在各种平台上都能顺利运行，甚至可能包括你完全没有测试过、安装过、甚至你的code也没在上面编译过的系统。
 
+Autotools由三个GNU package组成：
+# Autoconf，用来为项目产生configuration脚本；
+# Automake，用于简化创建一致、可用的makefiles的过程；
+# Libtool，provides an abstraction for the portable creation of shared libraries. （还不甚理解）
+
+谁应该使用Autotools:
+* 如果你在写基于Linux/Unix操作系统的开源软件，那么你应该使用autotools
+* The Autotools provide you with a build environment that will allow your project to build successfully on future versions or distributions with virtually no changes to the build scripts
+
+你什么时候不应该使用autotools:
+* 只有当你在写不会在linux/unix系统上跑的软件的时候（比如基于windows的软件）,你不应该使用autotools。
+
+==== *关于编程语言的选择* ====
+Autotools是GNU组织设计出来用于管理GNU项目的，在GNU社区，两个因素决定了编程语言的重要性：
+# 是否有任何GNU包是用这种语言实现的；
+# GNU编译器工具组（toolset）是否支持这种语言。
+
+基于以上两点的考虑，autotools原生支持以下编程语言（这里的支持意味着Autoconf will compile, link, and run source-level feature checks in these languages）：
+* C
+* C++
+* Objective C
+* Fortran
+* Fortran 77
+* Erlang
+
+==== *环境的支持* ====
+首先必须区分两个系统：
+# Maintainer's system. 项目维护者的系统。
+# End users' system. 项目使用者的系统。
+
+GNU Autotools框架包括三个主要的GNU包：Autoconf、Automake、Libtool。这几个包里的工具能生成基于gettext, m4, sed, make, 和perl packages的代码。Autotools的设计目标决定了使用autotools来生成编译系统只应该依赖于已经预先在用户机器上预先装好的工具。
+
+==== Autoconf ====
+尽管configure脚本很复杂，用户只需要配置几个变量就可以正常运行。这些变量通常都是关于组件、功能、其他选项的选择，比如：
+* 编译系统应该在哪里找库文件和头文件？
+* 我希望把最终产生的可执行文件安装在哪里？
+* 有哪些可选组件我希望编译？
+
+Autoconf生成的configure脚本提供了一组通用的选项，这些选项对于所有运行在POSIX系统上的可移植软件项目都很重要。Autoconf包提供了以下几个程序：
+* autoconf
+* autoheader
+* autom4te
+* autoreconf
+* autoscan
+* autoupdate
+* ifnames

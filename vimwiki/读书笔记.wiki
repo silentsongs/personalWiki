@@ -11,7 +11,8 @@
 
 * [[程序员的思维修炼 | 《程序员的思维修炼：开发认知潜能的九堂课》]]
 * [[theFastDiet| 《轻断食》]]: 2016-01-01
-* [[autotools| Autotools - A Practioner's Guide to GNU Autoconf, Automake, and Libtool]]: 2016-01-04 ~
-* [[Getting_Things_Done |《Getting Things Done》]]
-* [[《STL源码剖析》]]
-* [[《深入理解计算机系统》]]
+* [[autotools| 《Autotools - A Practioner's Guide to GNU Autoconf, Automake, and Libtool》]]: 2016-01-04 ~
+* [[strengths_finder| 《盖洛普优势识别器》]]
+* [[duansheli| 《断舍离》]]
+* [[sortout_magic| 《怦然心动的人生整理魔法》]]
+* [[the_secret_of_my_career| 《将才》]]

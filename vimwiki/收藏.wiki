@@ -1,5 +1,19 @@
 攒了一些经验之谈和经典美文，收在这里，方便翻看~~
 
+* [[life_tips| 生活中的小技巧]]
+* [[classic_articles| 常读常新 ]]
+* [[effective_and_plan| 关于计划、效率和总结]]
+* [[mind_strength| 安宁的力量]]
+* [[body_and_health| 身体力行]]
+* [[about_reading| 读书]]
+* [[decisions| 决策]]
+* [[interesting_articles| 野史趣文]]
+* [[beauty| 护肤 ]]
+* [[goods| 好物]]
+* [[career| 职场]]
+* [[socila_things| 世事人情]]
+* [[religion| 宗教神话]]
+
  *幸福满满* ：
 * [[food_moment| 各种普通的食物最好吃的时刻]]
 * [[book_as_girls| 把闲书比做姑娘……啥时读赫本、啥时读梅根？]]

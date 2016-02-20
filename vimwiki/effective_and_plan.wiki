@@ -1,0 +1,29 @@
+== 关于计划、效率和总结 ==
+
+* [[https://mp.weixin.qq.com/s?__biz=MjM5NTE5NzUwMA==&mid=401259948&idx=1&sn=83dfea35bd6b03cd24fa62a22fd7b10b&scene=1&srcid=0119O4665INJLo4l3uGgCMmE&key=710a5d99946419d92fbda4c7d7fd97a5cd6e512ec8d9122c9a31b3588709408ffd23319a1587bd74b841c64284b3584b&ascene=0&uin=MTc1ODY2NjM1&devicetype=iMac+MacBookPro11%2C2+OSX+OSX+10.10.5+build(14F27)&version=11020201&pass_ticket=s2qV%2BKr%2B%2FVz%2F5gnM18aaIYe7QbIoO66g61xE1ylX1c8%3D| 如何设计你的2016年年度计划（李开复）]]：
+	# 选择一项可行的目标就好
+	# 设定目标的SMART原则
+		- Specific 具体。
+		- Measurable 可衡量的。例如，不要将目标订为「多做善事」，这不够具体，也无法衡量，可改为每个月到老人院做义工一次。
+		- Attainable 可实现的、例如，不能订明年就要赚进1亿元，必须是可以完成的目标。
+		- Result-based 重视结果导向，而不只是过程。例如，1 个月减重1 公斤，而不只是每天早上不吃饭；或托福成绩提升50分，而不只是每天花时间背单字。
+		- Time-based 有时间性，在某段时间内完成计划。
+	# 挑选重要、但不紧急的事情。例子：
+		- 学好英文是个典型的例子。相关建议：
+			* 从阅读英文新闻开始，一方面开拓视野，同时增强英语能力。
+			* 花一半上网的时间读英文相关的资讯，或者有计划的大量阅读英文书籍。
+			* 推荐的英文网站：Business Insider, Quora, Buzzfeed, KhanAcademy, Linkedin, Techcrunch, Pando Daily, WSJ.D
+			* TED英文演讲
+			* 历史上著名的英文演讲
+			* 著名毕业演讲
+		- 分享一个扩展人际关系的年度计划：规定自己每周和一个新朋友吃饭，或喝茶。去哪儿找那么多人吃饭啊？我教你我的秘密：每次和新朋友吃饭，谈话中留意有没有什么他的朋友是你希望认识的，吃晚饭前务必请他再介绍一位朋友给你，增加你的社交圈。其实人生有很多机运，不是靠着最要好朋友的“强”关系，而是维系你的上百个“弱”关系; 如果能够掌握更多人脉，也可以带来更多的机会。
+	# 总结。
+* [[https://mp.weixin.qq.com/s?__biz=MjM5NDU0Mjk2MQ==&mid=401441898&idx=1&sn=490e6f90abef0ce688eebbe09f400b1a&scene=1&srcid=0119sWeBFWxe1LHPK2vbHG7F&key=710a5d99946419d9b825a0a30cced8a3ca5a6ce13ef2e791dffafa70b6a550029ea911aefa467c5bf27f6c254f9c85b8&ascene=0&uin=MTc1ODY2NjM1&devicetype=iMac+MacBookPro11%2C2+OSX+OSX+10.10.5+build(14F27)&version=11020201&pass_ticket=s2qV%2BKr%2B%2FVz%2F5gnM18aaIYe7QbIoO66g61xE1ylX1c8%3D| 2016：一起做简单的事（连岳）]]：
+	- 写作诀窍，三条：
+		# 让读者读你的第一句话。
+		# 让读者读你的第二句话。
+		# 让读者的兴趣保持到读你的最后一句话。
+	- 无论什么事让你拖延，你别想那么多，马上开始做三分钟。一篇文章让你拖延，先写三分钟。然后，你不知不觉就把它写完了。
+	- 用最简单的方法去做最有益于人生的事。
+	- 财富积累中的关键性因素是：身体健康。
+	- 好事的起点都很简单，只是它需要你重复一千遍以上，才会变成你人格与命运的一部分。

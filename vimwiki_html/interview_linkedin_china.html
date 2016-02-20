@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="Stylesheet" type="text/css" href="static/css/wiki.css">
+<link rel="Stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/wiki.js"></script>
+<title>interview_linkedin_china</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+		<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+			<span class="sr-only"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html">BlueBird's Wiki</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="diary/diary.html">日记</a></li>
+				<li><a href="各类清单.html">清单</a></li>
+				<li><a href="文章.html">文章</a></li>
+				<li><a href="收藏.html">收藏</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container content-body">
+   
+<h2 id="toc_0.1">领英中国面试总结</h2>
+
+<p>
+两轮技术面，然后跟王校长聊了一会。
+</p>
+
+<p>
+一面先聊项目，给他详细介绍了我们的预测系统是如何工作的，包含哪些模块，模块之间如何交互。然后写了个算法题：
+</p>
+<pre>
+给定一个完全二叉树，要求新插入一个给定节点。
+</pre>
+
+<p>
+用遍历的方法就是O(n)的复杂度。重点在如何利用完全二叉树的特性。只要从根节点出发，依次往下看是应该在左子树上插入还是右子树上插入。这个的判断方法只要左右两边的最高层数是否相等，如果相等就插左子树，不等就插右子树。
+</p>
+
+<p>
+然后就着我的项目问我，有没有想过用什么办法优化我们simulator和aggregator的性能。这个问题问出来我还蛮意外的，看起来对项目的准备不止是要把自己做的事情讲清楚，还要争取讲的漂亮突出技术性，同时也为自己留个改进的话题。
+</p>
+
+<p>
+二面直接问各种系统设计。一个移动产品，有聊天系统，有好友有群组，有公司有学校，有朋友圈，问如何设计。这个题问下来我有点发蒙，没有做过2C的产品，于是我就从数据模型的角度出发，说如何设计表，如何存取数据。接下来他接着问，一个人有500个好友，100个群组，怎么设计聊天系统。不知道点在哪里，就还是就着数据库设计说下去了。面试官的结论就是没有做过2C的东西，经验不足。
+</p>
+
+<p>
+最后跟王校长聊了聊，我跟他吐槽现公司的种种变化，如何多了很多繁琐冗长的流程，团队之间如何合作不畅。他就说创业的艰辛，说后悔没有早点出来，说创业要考虑的东西非常多，首要的就是公司存亡问题，招人也就非常谨慎，要把好钢用在刀刃上。
+</p>
+
+<p>
+这次谈话对我的冲击还蛮大的。一语惊醒梦中人的感觉。
+</p>
+
+</div>
+</body>
+</html>
